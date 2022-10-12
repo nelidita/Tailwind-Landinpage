@@ -17,44 +17,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./public/css/tailwind.css" />
     <title>Turisteando</title>
   </head>
   <body class="font-Montserrat dark:bg-gray-900">
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800">
+    <nav
+      class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800"
+    >
       <div class="h-auto w-auto">
-        <p class="text-xl text-primary font-black dark:text-white">Turisteando</p>
+        <p class="text-xl text-primary font-black dark:text-white">
+          Turisteando
+        </p>
       </div>
       <div class="flex space-x-8">
-        <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
-        <a class="font-bold text-md text-primary dark:text-white" href="#recomendados"
+        <a class="font-bold text-md text-primary dark:text-white" href="#home"
+          >Inicio</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#recomendados"
           >Recomendados</a
         >
-        <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas"
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#rentas_destacadas"
           >Rentas</a
         >
-        <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQS</a>
-        <a class="font-bold text-md text-primary dark:text-white" href="#sobre_nosotros"
+        <a class="font-bold text-md text-primary dark:text-white" href="#faqs"
+          >FAQS</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#sobre_nosotros"
           >Sobre nosotros</a
         >
       </div>
       <div class="flex space-x-4">
         <a href="">
-          <i class="text-base text-primary dark:text-white fa-search fa-solid"></i>
+          <i
+            class="text-base text-primary dark:text-white fa-search fa-solid"
+          ></i>
         </a>
         <button class="toggle">
-          <i class="text-base text-primary dark:text-white fa-moon fa-solid"></i>
+          <i
+            class="text-base text-primary dark:text-white fa-moon fa-solid"
+          ></i>
         </button>
         <a href="./registrationForm.html">
-          <i class="text-base text-primary dark:text-white fa-user fa-solid"></i>
+          <i
+            class="text-base text-primary dark:text-white fa-user fa-solid"
+          ></i>
         </a>
       </div>
     </nav>
     <section class="w-full h-auto flex flex-col">
-      <div class="w-full h-3/4 id="home">
+      <div class="w-full h-3/4" id="home">
         <div class="w-full h-full">
           <div
-            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start "
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start"
           >
             <input
               type="search"
@@ -79,14 +99,18 @@
           >
             <img
               class="lg:hidden"
-              src="./img/sanFrancisco.jpg"
+              src="./public/img/sanFrancisco.jpg"
               alt="San Francisco City"
             />
           </div>
         </div>
       </div>
-      <div class="w-full h-auto" id="recomendiados">
-        <p class="text-3xl font-semibold text-primary dark:text-white pl-6 pt-6">Recomendados</p>
+      <div class="w-full h-auto" id="recomendados">
+        <p
+          class="text-3xl font-semibold text-primary dark:text-white pl-6 pt-6"
+        >
+          Recomendados
+        </p>
         <div
           class="w-auto h-72 items-center mt-6 p-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide"
         >
@@ -101,7 +125,9 @@
             <div class="Image bg-new_york"></div>
             <div class="Info bg-white dark:bg-gray-800">
               <p class="Country text-terciary dark:text-white">Nueva York</p>
-              <p class="text-terciary text-sm dark:text-white">La jungla de concreto</p>
+              <p class="text-terciary text-sm dark:text-white">
+                La jungla de concreto
+              </p>
             </div>
           </div>
           <div class="Card">
@@ -115,13 +141,15 @@
             <div class="Image bg-switzerland"></div>
             <div class="Info bg-white dark:bg-gray-800">
               <p class="Country text-terciary dark:text-white">Suiza</p>
-              <p class="text-terciary text-sm dark:text-white">Nieve y lugares de ensueño</p>
+              <p class="text-terciary text-sm dark:text-white">
+                Nieve y lugares de ensueño
+              </p>
             </div>
           </div>
           <div class="Card">
             <div class="Image bg-yosemite"></div>
             <div class="Info bg-secondary dark:bg-gray-700">
-              <p class="Country text-white ">Yosemite</p>
+              <p class="Country text-white">Yosemite</p>
               <p class="text-white text-sm">
                 Un parque que si o si debe conocer
               </p>
@@ -139,7 +167,9 @@
         </div>
       </div>
       <div class="px-6 w-auto lg:px-6" id="rentas_destacadas">
-        <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">
+        <p
+          class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white"
+        >
           Rentas destacadas
         </p>
         <div class="w-full h-full flex flex-col items-center justify-center">
@@ -177,7 +207,9 @@
       </div>
       <div class="h-full w-full" id="faqs">
         <div class="w-full h-full px-6 flex flex-col space-y-4 pb-4">
-          <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
+          <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">
+            FAQS
+          </p>
           <div>
             <p class="FAQSTitle dark:text-white">Política de Cancelación</p>
             <p class="text-md pt-2 dark:text-white">
@@ -259,12 +291,12 @@
       </a>
     </div>
     <script>
-      const htmlElement = document.querySelector('html');
-      const toggleButton = document.querySelectorAll('.toggle');
-      toggleButton.forEach( item => {
-          item.addEventListener('click', () => {
-              htmlElement.classList.toggle( 'dark' );
-          });
+      const htmlElement = document.querySelector("html");
+      const toggleButton = document.querySelectorAll(".toggle");
+      toggleButton.forEach((item) => {
+        item.addEventListener("click", () => {
+          htmlElement.classList.toggle("dark");
+        });
       });
     </script>
   </body>
