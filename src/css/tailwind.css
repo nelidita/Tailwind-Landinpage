@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Card{
+    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
+}
+
+.Image{
+    @apply w-full h-3/5  bg-cover rounded-t-lg
+}
+
+.Info{
+    @apply w-full h-2/5  rounded-b-lg px-4
+}
+
+.Country{
+    @apply font-bold text-lg py-2
+}
+
+.CardTitle{
+    @apply text-3xl px-4 pt-8 pb-2 font-semibold text-white
+}
+
+.FAQSTitle{
+    @apply text-xl font-medium text-primary
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Turisteando</title>
+  </head>
+  <body class="font-Montserrat dark:bg-gray-900">
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800">
+      <div class="h-auto w-auto">
+        <p class="text-xl text-primary font-black dark:text-white">Turisteando</p>
+      </div>
+      <div class="flex space-x-8">
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#recomendados"
+          >Recomendados</a
+        >
+        <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas"
+          >Rentas</a
+        >
+        <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQS</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#sobre_nosotros"
+          >Sobre nosotros</a
+        >
+      </div>
+      <div class="flex space-x-4">
+        <a href="">
+          <i class="text-base text-primary dark:text-white fa-search fa-solid"></i>
+        </a>
+        <button class="toggle">
+          <i class="text-base text-primary dark:text-white fa-moon fa-solid"></i>
+        </button>
+        <a href="./registrationForm.html">
+          <i class="text-base text-primary dark:text-white fa-user fa-solid"></i>
+        </a>
+      </div>
+    </nav>
+    <section class="w-full h-auto flex flex-col">
+      <div class="w-full h-3/4 id="home">
+        <div class="w-full h-full">
+          <div
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start "
+          >
+            <input
+              type="search"
+              class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
+              placeholder="San Francisco"
+              name=""
+              id=""
+            />
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+              <p class="text-4xl ml-16 font-bold text-black">
+                Encuentra más ubicaciones como esta
+              </p>
+            </div>
+            <button
+              class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16"
+            >
+              Explorar
+            </button>
+          </div>
+          <div
+            class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+          >
+            <img
+              class="lg:hidden"
+              src="./img/sanFrancisco.jpg"
+              alt="San Francisco City"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-auto" id="recomendiados">
+        <p class="text-3xl font-semibold text-primary dark:text-white pl-6 pt-6">Recomendados</p>
+        <div
+          class="w-auto h-72 items-center mt-6 p-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide"
+        >
+          <div class="Card">
+            <div class="Image bg-norway"></div>
+            <div class="Info bg-secondary dark:bg-gray-700">
+              <p class="Country text-white">Noruega</p>
+              <p class="text-white text-sm">Paisajes increibles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="Image bg-new_york"></div>
+            <div class="Info bg-white dark:bg-gray-800">
+              <p class="Country text-terciary dark:text-white">Nueva York</p>
+              <p class="text-terciary text-sm dark:text-white">La jungla de concreto</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="Image bg-seattle"></div>
+            <div class="Info bg-secondary dark:bg-gray-700">
+              <p class="Country text-white">Seattle</p>
+              <p class="text-white text-sm">Ciudad grande</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="Image bg-switzerland"></div>
+            <div class="Info bg-white dark:bg-gray-800">
+              <p class="Country text-terciary dark:text-white">Suiza</p>
+              <p class="text-terciary text-sm dark:text-white">Nieve y lugares de ensueño</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="Image bg-yosemite"></div>
+            <div class="Info bg-secondary dark:bg-gray-700">
+              <p class="Country text-white ">Yosemite</p>
+              <p class="text-white text-sm">
+                Un parque que si o si debe conocer
+              </p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="Image bg-europe"></div>
+            <div class="Info bg-white dark:bg-gray-800">
+              <p class="Country text-terciary dark:text-white">Europa</p>
+              <p class="text-terciary text-sm dark:text-white">
+                Ciudades cálidas y llenas de historia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-6 w-auto lg:px-6" id="rentas_destacadas">
+        <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">
+          Rentas destacadas
+        </p>
+        <div class="w-full h-full flex flex-col items-center justify-center">
+          <div
+            class="w-full h-96 bg-chicago bg-cover rounded-xl mb-6 lg:bg-center"
+          >
+            <p class="CardTitle lg:text-b">Chicago</p>
+            <p class="text-sm pl-8 text-white mr-24 lg:text-lg">
+              2 habitaciones, baño y cocina
+            </p>
+          </div>
+          <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
+            <div class="w-full h-96 bg-LA bg-cover rounded-xl mb-6 lg:h-auto">
+              <p class="CardTitle">Los Angeles</p>
+              <p class="text-sm pl-8 text-white mr-24 lg:text-lg">
+                3 habitaciones, 2 baños, cocina y excelente vista al mar.
+              </p>
+            </div>
+            <div class="h-full w-full">
+              <div class="w-full h-96 bg-miami bg-cover rounded-xl mb-6">
+                <p class="CardTitle">Miami</p>
+                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">
+                  4 habitaciones, 3 baños, cocina y piscina privada
+                </p>
+              </div>
+              <div class="w-full h-96 bg-bali bg-cover rounded-xl mb-6">
+                <p class="CardTitle">Bali</p>
+                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">
+                  2 habitaciones, baño, cocina y piscina privada
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-full" id="faqs">
+        <div class="w-full h-full px-6 flex flex-col space-y-4 pb-4">
+          <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
+          <div>
+            <p class="FAQSTitle dark:text-white">Política de Cancelación</p>
+            <p class="text-md pt-2 dark:text-white">
+              Para estancias menores a una semana es importante avisar con 3
+              días de anticipación, de caso contario será sancionado.
+            </p>
+          </div>
+          <div>
+            <p class="FAQSTitle dark:text-white">Métodos de pago</p>
+            <p class="text-md pt-2 dark:text-white">
+              Aceptamos distintos métodos de pago: VISA, MasterCard, American
+              Express, Paypal y Binance
+            </p>
+          </div>
+          <div>
+            <p class="FAQSTitle dark:text-white">Mascotas</p>
+            <p class="text-md pt-2 dark:text-white">
+              El tema de las mascotas dependerá directamente del anfitrión.
+            </p>
+          </div>
+          <div>
+            <p class="FAQSTitle dark:text-white">Información de Seguridad</p>
+            <p class="text-md pt-2 dark:text-white">
+              Todas nuestras estancias cuentan con seguro en caso de accidentes
+            </p>
+          </div>
+          <div>
+            <p class="FAQSTitle dark:text-white">Estancias Largas</p>
+            <p class="text-md pt-2 dark:text-white">
+              Contamos con estancias de hasta 3 meses, en este caso es requerido
+              un anticipo con un monto del 50% del valor de la renta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2" id="sobre_nosotros">
+      <h2 class="text-lg text-gray-300">Acerca De</h2>
+      <ul>
+        <li class="text-sm text-gray-300">Inversionistas</li>
+        <li class="text-sm text-gray-300">Empleos</li>
+        <li class="text-sm text-gray-300">Términos y condiciones</li>
+        <li class="text-sm text-gray-300">Turisteando, Inc.</li>
+        <li class="text-sm text-gray-300">
+          Siguenos
+          <ul class="text-xl text-gray-300 flex space-x-2">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+    <div
+      id="tab_bar"
+      class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden dark:bg-gray-800"
+    >
+      <a href="#home">
+        <i class="fa-solid fa-house text-xl text-gray-200"></i>
+      </a>
+      <a href="#rentas_destacadas">
+        <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+      </a>
+      <a href="#recomendados ">
+        <i class="fa-solid fa-heart text-xl text-gray-200"></i>
+      </a>
+      <button class="toggle">
+        <i class="text-xl text-gray-200 fa-moon fa-solid"></i>
+      </button>
+      <a href="#home">
+        <i class="fa-solid fa-user text-xl text-gray-200"></i>
+      </a>
+    </div>
+    <script>
+      const htmlElement = document.querySelector('html');
+      const toggleButton = document.querySelectorAll('.toggle');
+      toggleButton.forEach( item => {
+          item.addEventListener('click', () => {
+              htmlElement.classList.toggle( 'dark' );
+          });
+      });
+    </script>
+  </body>
+</html>
